@@ -1,0 +1,34 @@
+<p>
+  edit-user works!
+</p>
+<form autocomplete="off" action="" [formGroup]="personDetailForm" class="custom-form">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="">Name:</label>
+      <input type="text" class="form-control" formControlName="userName" readonly />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Email:</label>
+      <input type="email" class="form-control" formControlName="email"  readonly/>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="">Mobile:</label>
+      <input class="form-control" formControlName="mobile" readonly/>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Address:</label>
+      <input class="form-control" type="text" formControlName="address" readonly/>
+    </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <button (click)="backToHome()">Back</button>
+      </div>
+      <!-- <div class="form-group col-md-6">
+        <button (click)="onSaveClick()"
+          [disabled]="!(personDetailForm.valid)">Save</button>
+      </div> -->
+    </div>
+</form>
